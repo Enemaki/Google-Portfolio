@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!--<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />-->
+<meta charset="UTF-8">
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" href="css/master.css">
+
+<title>Portfolio Project</title>
+<script
+  src="https://unpkg.com/vue@3/dist/vue.global.js">
+</script>
+</head>
+
+<body>
+   <div id="app">
+      <header>
+      </header>
+      <article>
+       <h1>Sadiku Mustapha Eneye</h1>
+       <h2 class="one"><b>Web developer</b></h2>
+       <p class="two">I was born on the 25th of Septemper 1997 in Kogi State, Nigeria. 
+         I am a graduate of Chemical Engineering from the Ahmadu Bello University in Nigeria. 
+         My journey in tech began in 2019 when I was first introduced to the Python programming language. 
+         Since then I have undertaken several training programs and read several books in order to acquire the 
+         necessary software skills. My focus is on creating projects using Python Django framework and vue.js, 
+         I have done some projects on this track and my goal is to build enough experience and skill to become 
+         an expert in this field.
+      </p>
+      </article>
+      <h2>Porfolio</h2>
+      <div class="container">
+         <div class="div-box" id="c-1">
+            <div id="v-one" style="background-image: url('./images/pexels-pixabay-270637\ \(1\).jpg');"></div>
+            <div id="v-two">
+               <p>Take a look at some of my projects on Github</p>
+               <button><a href="https://github.com/Enemaki?tab=repositories">Github</a></button>
+            </div>
+         </div>
+         <div class="div-box">
+            <div id="v-one" style="background-image: url('./images/pexels-pixabay-270408.jpg');"></div>
+            <div id="v-two">
+               <p>Take a look at my learning profile and certificates</p>
+               <button><a href="https://www.freecodecamp.org/Sadikueneye">FreeCodeCamp</a></button>
+            </div>
+         </div>
+         <div class="div-box">
+            <div id="v-one">1</div>
+            <div id="v-two">
+               <p>To know more about me check out my linkedin profile</p>
+               <button><a href="www.linkedin.com/in/mustapha-sadiku-945b72201">Linkedin</a></button>
+            </div>
+         </div>
+      </div>
+      <div class="calculate">
+         <h2>Take a break and play with the calculator</h2>
+         <p>This calculator performs addition, subtraction, multiplation and division operations</p>
+         <div class="lab">
+            <label>Enter the first number: <input type="number" v-model="first"></label>
+         </div>
+         <div class="lab">
+            <label>Enter operation: <input type="text" v-model="operation"></label>
+         </div>
+         <div class="lab">
+            <label>Enter the second number: <input type="number" v-model="second"></label>
+         </div>
+         <button @click="showAnswer">Answer</button>
+         <div class="lab">
+            <p>{{ first }} {{ operation}} {{ second }}</p>
+            <span v-if="answer"><h2>Answer: {{ answer }}</h2></span>
+            <span v-else><h2>{{ response }}</h2></span>
+         </div>
+         <div>
+            <h3>Powered by:
+               <p class="skill">JavaScript</p>
+               <p class="skill">Vue.js</p>
+            </h3>
+         </div>
+      </div>
+      <h2>Skill Summary</h2>
+      <div class="skill-div">
+         <p class="skill">HTML</p>
+         <p class="skill">CSS</p>
+         <p class="skill">JAVASCRIPT</p>
+         <p class="skill">PYTHON</p>
+         <p class="skill">VUE.JS</p>
+         <p class="skill">DJANGO</p>
+         <ul class="list-1">
+            <li>Front-end developer</li>
+            <li>Back-end developer</li>
+            <li>Fullstack web developer</li>
+         </ul>
+      </div>
+      <h2>Education</h2>
+      <p id="ed">Ahmadu Bello University, Zaria</p>
+      <p id="ed">W3school.com</p>
+      <p id="ed">FreeCodeCamp.com</p>
+      <p id="ed">Youtube.com</p>
+      <h2>Contact</h2>
+      <p id="ed">Email: <span>mustyeneye@gmail.com</span></p>
+      <p id="ed">Linkedin: <span>Mustapha Sadiku</span></p>
+      <footer>
+       <div></div>
+       <p class="copyright-text">© Copyright 2023 Sadiku E. Mustapha </p>
+      </footer>
+   </div>
+</body>
+
+
+<!-- Our codes -->
+<script src="js/main.js"></script>

@@ -1,0 +1,123 @@
+body {
+    background-color: moccasin;
+    color: black;
+}
+
+header {
+    margin: 30px 50px;
+    height: 140px;
+    background-image: url('../images/pexels-pixabay-270408.jpg');
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    color: orange;    
+}
+
+footer div {
+    background-image: url('../images/droplets.jpg');
+    height: 100px;
+    margin: 10px 40px
+}
+
+.copyright-text {
+    text-align: center;
+}
+
+article {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div-box {
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    margin: 30px;
+}
+
+h2, #ed {
+    text-align: center;
+}
+.skill {
+    border: 1px solid black;
+    display: inline;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.skill-div {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.list-1 {
+    list-style-type: square;
+}
+span {
+    color: maroon;
+}
+.two {
+    margin: auto 40px;
+}
+button {
+    border-radius: 10px;
+    background: blue;
+    margin: 5px;
+}
+#v-two button {
+    margin: 5px 70px;
+}
+#v-two p {
+    margin: 10px
+}
+#c1 {
+    display: flex;
+    flex-direction: column;
+}
+#v-one {
+    width: 100%;
+    height: 70%;
+    background-image: url(../images/pexels-pixabay-267350.jpg);
+}
+#v-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+button a {
+    text-decoration: none;
+    color: red;
+}
+
+.calculate {
+    margin: 30px 50px;
+    height: 400px;
+    background: orange;
+    text-align: center;
+}
+.lab {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .calculate {
+        height: 450px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .div-box {
+        height: 450px;
+    }
+}
